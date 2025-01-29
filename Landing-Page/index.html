@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Garv Solutionsy Website</title>
+  <style>
+    /* Base styles for body and html */
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0e0e0e;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    /* Style for the navigation menu */
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      background-color: #151515;
+      padding: 15px 0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+      z-index: 1000;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .navbar.scrolled {
+      background-color: #1c1c1c;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    }
+
+    .navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    .navbar li {
+      margin: 0 20px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 18px;
+      text-transform: uppercase;
+      font-weight: bold;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .navbar a:hover {
+      color: #4caf50;
+      transform: scale(1.1);
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #1e1e1e, #101010);
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      margin: 0;
+      text-shadow: 2px 2px 5px #000;
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+      margin: 20px 0;
+      line-height: 1.6;
+    }
+
+    .hero button {
+      background: #4caf50;
+      color: #fff;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .hero button:hover {
+      background: #3e8e41;
+    }
+
+    /* Section styles */
+    section {
+      padding: 60px 20px;
+      margin: 20px auto;
+      max-width: 1200px;
+    }
+
+    .about, .services, .contact {
+      text-align: center;
+    }
+
+    .about h2, .services h2, .contact h2 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .about p, .services p, .contact p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+    }
+
+    .services .cards {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .services .card {
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+      width: 300px;
+      transition: transform 0.3s ease;
+    }
+
+    .services .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .services .card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .services .card p {
+      font-size: 1rem;
+    }
+
+    /* Contact form */
+    .contact form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .contact input, .contact textarea, .contact button {
+      width: 100%;
+      padding: 15px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .contact input, .contact textarea {
+      background: #2b2b2b;
+      color: #fff;
+    }
+
+    .contact button {
+      background: #4caf50;
+      color: #fff;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .contact button:hover {
+      background: #3e8e41;
+    }
+
+    footer {
+      background: #151515;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="hero">
+    <div>
+      <h1>Welcome to Garv Solutions</h1>
+      <p>Your gateway to futuristic, high-tech solutions.</p>
+      <button>Explore More</button>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>
+      At Garv Solutions, we specialize in cutting-edge technology, blending creativity with innovation to deliver outstanding solutions. From artificial intelligence to dynamic web designs, we are passionate about driving success for our clients worldwide.
+    </p>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Web Development</h3>
+        <p>Responsive, high-performance websites built using the latest technologies.</p>
+      </div>
+      <div class="card">
+        <h3>AI Solutions</h3>
+        <p>Revolutionary artificial intelligence tools tailored to your needs.</p>
+      </div>
+      <div class="card">
+        <h3>Cloud Integration</h3>
+        <p>Seamless cloud services to enhance scalability and reliability.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Have questions or want to work with us? Send us a message!</p>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Garv Solutions. All Rights Reserved.
+  </footer>
+
+  <script>
+    const navbar = document.querySelector('.navbar');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+  </script>
+</body>
+</html>
