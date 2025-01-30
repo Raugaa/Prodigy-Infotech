@@ -47,13 +47,13 @@ Follow these steps to clone and run the project locally:
    ```bash
    git clone https://github.com/Raugaa/Prodigy-Infotech.git
    
-2. **Navigate into the project folder::
+2. Navigate into the project folder::
    ```bash
    cd Prodigy-Infotech
-3. **Install dependencies (only if applicable, for example, in React projects):
+3. Install dependencies (only if applicable, for example, in React projects):
    ```bash
    npm install
-4. **Run the application:
+4. Run the application:
    ```bash
    npm start
 
